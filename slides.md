@@ -7,8 +7,6 @@ lineNumbers: false
 drawings:
   enabled: dev
 presenter: dev
-download: slides-export.pdf
-exportFilename: public/intro-to-slidev
 export:
   dark: true
 transition: fade
@@ -62,8 +60,8 @@ layout: statement
 - コンテンツとスタイルを分離できる
   - まずコンテンツに集中、後からスタイルを調整する進め方ができる
 - 技術的な内容との親和性が高い
-- 柔軟性・拡張性が高い
-  - 割となんでもできる
+- 自由度が高い
+  - Web 技術を用いたリッチな表現が可能
   - theme, addon が npm packages として公開されている
     - このスライドも [slidev-addon-asciinema](https://www.npmjs.com/package/slidev-addon-asciinema) を使用している
 - バージョン管理しやすい
