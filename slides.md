@@ -1,9 +1,13 @@
 ---
 theme: seriph
+title: Slidev でスライドを作ろう
+author: mitani24
 highlighter: shiki
 lineNumbers: false
 drawings:
-  persist: false
+  syncAll: false
+presenter: dev
+download: true
 transition: fade
 addons:
   - slidev-addon-asciinema
@@ -89,4 +93,4 @@ layout: statement
 class: text-6xl font-700
 ---
 
-使いこなせれば強力💪
+使いこなせば強力💪
