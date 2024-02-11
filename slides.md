@@ -9,9 +9,9 @@ addons:
   - slidev-addon-asciinema
 ---
 
-# Slidev はいいぞ
+# Slidev でスライドを作ろう
 
-2024-02-15 mitani24
+mitani24 2024-02-15
 
 ---
 layout: two-cols
@@ -28,6 +28,16 @@ layout: two-cols
 ::right::
 
 ![slidev logo](https://sli.dev/logo-title.png)
+
+---
+
+# スライド作成の大まかな流れ
+
+1. プロジェクトを作成する
+2. 開発サーバーを起動する
+3. Markdown でスライドを記述する
+4. 必要に応じてテーマやスタイルをカスタマイズする
+5. スライドをエクスポートして共有する
 
 ---
 
@@ -49,34 +59,34 @@ layout: statement
 
 ---
 
-# いいところ 😊
+# いいところ😊
 
-- 手軽に映えるスライドを作れる
+- 素早く映えるスライドを作れる
 - コンテンツとスタイルを分離できる
-  - まずコンテンツに集中、後からスタイルをつける進め方ができる
+  - まずコンテンツに集中、後からスタイルを調整する進め方ができる
 - 技術的な内容との親和性が高い
 - 柔軟性・拡張性が高い
   - 割となんでもできる
-  - 有志が開発した theme, addon が npm packages として公開されている
+  - theme, addon が npm packages として公開されている
     - このスライドも [slidev-addon-asciinema](https://www.npmjs.com/package/slidev-addon-asciinema) を使用している
 - バージョン管理しやすい
 
 ---
 
-# あと一歩なところ 😢
+# あと一歩なところ😢
 
 - ある程度お作法への慣れが必要
 - 凝ったことをやろうとすると途端にハードルが上がる
   - [UnoCSS](https://unocss.dev/), [@vueuse/motion](https://motion.vueuse.org/) 等の知識が要求される
 - たまにバグっぽい挙動がある
   - `transition: slide-left` の挙動が怪しい
-  - まだ Beta 版
+  - たぶんまだ Beta 版
 - 日本語ドキュメントも用意されているが若干古い
   - 英語版を見たほうがいい
 
 ---
+layout: statement
+class: text-6xl font-700
+---
 
-# まとめ
-
-- Slidev はいいぞ
-  - 人を選ぶが使いこなせれば強力
+使いこなせれば強力💪
