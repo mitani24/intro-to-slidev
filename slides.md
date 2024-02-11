@@ -5,9 +5,12 @@ author: mitani24
 highlighter: shiki
 lineNumbers: false
 drawings:
-  syncAll: false
+  enabled: dev
 presenter: dev
-download: true
+download: slides-export.pdf
+exportFilename: public/intro-to-slidev
+export:
+  dark: true
 transition: fade
 addons:
   - slidev-addon-asciinema
@@ -32,16 +35,6 @@ layout: two-cols
 ::right::
 
 ![slidev logo](https://sli.dev/logo-title.png)
-
----
-
-# スライド作成の大まかな流れ
-
-1. プロジェクトを作成する
-2. 開発サーバーを起動する
-3. Markdown でスライドを記述する
-4. 必要に応じてテーマやスタイルをカスタマイズする
-5. スライドをエクスポートして共有する
 
 ---
 
@@ -89,8 +82,8 @@ layout: statement
   - 英語版を見たほうがいい
 
 ---
-layout: statement
-class: text-6xl font-700
+layout: cover
+background: https://source.unsplash.com/qaCJ6A0Rfvg
 ---
 
-使いこなせば強力💪
+# Slidev はいいぞ
