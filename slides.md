@@ -4,7 +4,7 @@ title: Slidev はいいぞ
 author: mitani24
 export:
   dark: true
-transition: slide-left
+transition: fade
 addons:
   - slidev-addon-asciinema
 ---
@@ -23,46 +23,43 @@ layout: two-cols
 
 # [Slidev](https://sli.dev/) とは
 
-- テキストベースのスライド作成するツール
-  - SPA として出力される
-  - このスライドも Slidev で作られている
+- テキストベースのスライド作成ツール
+- いくつかのパッケージ群で構成される
+  - Node.js 製 CLI
+  - theme などの npm packages
+  - VSCode 拡張
 - 類似ツール
   - [Marp](https://marp.app/)
   - [Fusuma](https://hiroppy.github.io/fusuma/)
+
+このスライドも Slidev で作られている
 
 ::right::
 
 ![slidev logo](https://sli.dev/logo-title.png)
 
 ---
+layout: statement
+---
 
-# 準備はかんたん！
-
-- 必要なもの
-  - Node.js
-  - テキストエディタ
-- `npm init slidev@latest` コマンド1発で環境が整う
-- 生成された `slides.md` を編集するだけ
-
-<!-- <Asciinema src="slidev-init.cast" :playerProps="{cols: 150, rows: 25, speed: 2}" m="t-4"/> -->
+# 特長1: テキストベース
 
 ---
 
-# スライドを記述する
+# 特長1: テキストベース
+
+主に Markdown でスライドを記述する
 
 <div grid="~ cols-2 gap-8">
 <div>
 
 Input
 
-```md {all|1-5|9-16|17|all}
+```md {all|1-4|6-12|14|all}
 ---
 theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
 transition: slide-left
 ---
-
-<!-- 1ページ目 -->
 
 # Slidev はいいぞ
 
@@ -80,19 +77,66 @@ transition: slide-left
 </div>
 <div>
 
-Output
+<p m="t-0">Output</p>
 
 ![slide title page](slide-title.png)
 
 </div>
 </div>
 
+<style>
+p {
+  @apply mt-0!;
+}
+</style>
+
+---
+
+# 特長1: テキストベース
+
+## 利点
+
+- 素早く映えるスライドを作れる
+- コンテンツとスタイルを分離できる
+  - まずコンテンツに集中、後からスタイルを調整する進め方ができる
+- バージョン管理しやすい
+
+<style>
+h2 {
+  @apply my-4!;
+}
+</style>
 
 ---
 layout: statement
 ---
 
-# 特長1: 高すぎる表現力
+# 特長2: SPA として出力する
+
+---
+
+# 特長2: SPA として出力する
+
+- 見た目がスライドっぽい Web アプリ
+- 作業は開発サーバーを起動して行う
+
+## 利点
+
+- コードの変更は即座にスライドに反映
+- Web 技術でできることは Slidev でも実現可能
+- [GitHub Pages](https://pages.github.com/) など好きな場所にホストして公開できる
+
+<style>
+h2 {
+  @apply mb-4!;
+}
+</style>
+
+---
+layout: statement
+---
+
+# 特長3: 高すぎる表現力
 
 ---
 
@@ -159,7 +203,7 @@ function updateUser(id: number, update: User) {
 
 # 高すぎる表現力: 数式・ダイアグラム
 
-LaTeX や Mermaid はもちろんいける
+LaTeX や Mermaid はもちろん使える
 
 <div grid="~ cols-2 gap-8">
 
@@ -201,7 +245,7 @@ sequenceDiagram
 <div grid="~ cols-2 gap-8" m="t-4">
 <div>
 
-自作の Vue Component を埋め込める
+自作 Vue Component を埋め込める
 
 ```html
 <Counter :count="10" />
@@ -224,62 +268,34 @@ sequenceDiagram
 
 ---
 
-# 高すぎる表現力: 他にもいろいろ
+# 高すぎる表現力
 
-紹介しきれん…
+## 利点
 
-- テーマ
-- アニメーション
-- アイコン
-- スライドトランジション
-- レイアウト
-- アドオン
-- etc.
+- 技術的な内容と親和性が高い
+  - 多様な表現を簡単に扱えるよう工夫されている
+- 拡張性が高い
+  - 多くの機能が拡張できる
+  - 公式やコミュニティにより開発された theme, addon が npm packages として公開されている
+  - もちろん自作もできる
 
-多くの機能がカスタマイズ可能で拡張に対して開かれまくっている
+<style>
+h2 {
+  @apply mb-4!;
+}
+</style>
 
 ---
 layout: statement
 ---
 
-# 特長2: プレゼンを上手くやれる
+# あと一歩なところ
 
 ---
 
-# 最高のプレゼンツール
+# あと一歩なところ
 
-作るだけじゃない
-
-- ページ一覧
-- 勝手に付いてくる Light / Dark モード
-- カメラビューをスライド上に表示
-- プレゼンテーションを録画
-- ドローイングツール
-- プレゼンターモード
-- ローカルファイルと同期した統合エディタ
-
-
----
-
-# いいところ😊
-
-- 素早く映えるスライドを作れる
-- コンテンツとスタイルを分離できる
-  - まずコンテンツに集中、後からスタイルを調整する進め方ができる
-- 技術的な内容との親和性が高い
-- 表現力が高い
-  - Web 技術を用いたリッチな表現が可能
-- 拡張性が高い
-  - 多くの機能が拡張できる
-  - theme, addon が npm packages として公開されている
-    - このスライドも [slidev-addon-asciinema](https://www.npmjs.com/package/slidev-addon-asciinema) を使用させていただいた
-- バージョン管理しやすい
-
----
-
-# あと一歩なところ😢
-
-- ある程度お作法への慣れが必要
+- ある程度お作法への慣れは必要
 - 凝ったことをやろうとすると途端にハードルが上がる
   - [UnoCSS](https://unocss.dev/), [@vueuse/motion](https://motion.vueuse.org/) 等の知識が要求される
 - 凝ろうと思えばいくらでも凝れるのでやらないことを決めないと凝り続けてしまう
@@ -287,6 +303,14 @@ layout: statement
   - たぶんまだ Beta 版
 - 日本語ドキュメントも用意されているが若干古い
   - 英語版を見たほうがいい
+
+---
+
+# まとめ
+
+- Slidev はテキストベースのスライド作成ツール
+- Web 技術がベースとなっている
+- 高い表現力とそれを扱いやすくする工夫がたくさん
 
 ---
 layout: cover
