@@ -2,11 +2,10 @@
 theme: seriph
 title: Slidev はいいぞ
 author: mitani24
+monaco: true
 export:
   dark: true
 transition: fade
-addons:
-  - slidev-addon-asciinema
 ---
 
 # Slidev はいいぞ
