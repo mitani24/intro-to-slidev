@@ -79,7 +79,7 @@ transition: slide-left
 
 <p m="t-0">Output</p>
 
-![slide title page](slide-title.png)
+![slide title page](/slide-title.png)
 
 </div>
 </div>
@@ -232,7 +232,7 @@ sequenceDiagram
 埋め込めます。それ
 
 <div grid="~ cols-2 gap-8">
-<video src="video.mov" autoplay loop muted />
+<video src="/video.mov" autoplay loop muted />
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.82803068985!2d139.7645498765545!3d35.681236172587326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1707909133619!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
